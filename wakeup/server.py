@@ -80,6 +80,10 @@ def sleep():
     else:
         return redirect(url_for('login'))
 
+@app.route('/logout')
+def logout():
+    session.pop('login', None)
+    return redirect(url_for('login'))
 
-def run(), host='0.0.0.u':
+def run():
     app.run(port=config.SERVER_PORT, host='0.0.0.0')
