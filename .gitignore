@@ -1,0 +1,9 @@
+.Python
+bin/*
+lib/*
+include/*
+wakeup/config.py
+pip-selfcheck.json
+**/.DS_Store
+**/*.swp
+**/__pycache__

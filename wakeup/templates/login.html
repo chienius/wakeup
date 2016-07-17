@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Wake Up!</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='custom.css')}}">
+    <script src="{{url_for('static', filename='jquery.min.js')}}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Wake Up!</h1>
+                <p>Wake your target PC up with a single click!</p>
+            </div>
+            <div class="col-md-9">
+                <h2>Login</h2>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="token">Token</label>
+                        <input class="form-control" type="password" name="token" id="token">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+class Config:
+    SERVER_PORT = '7778'
+    TARGET_IP = '192.168.1.102'
+    TARGET_PORT = '7778'
+    TARGET_MAC = 'EE:EE:EE:EE:EE:EE'
+    WOL_COMMAND = 'ether-wake'
+    TOKEN = 'login token'
+    SECRET = 'session secret'
+
+config = Config

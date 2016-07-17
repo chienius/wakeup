@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Wake Up!</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='custom.css')}}">
+    <script src="{{url_for('static', filename='jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='home.js')}}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Wake Up!</h1>
+                <p>Wake your target PC up with a single click!</p>
+            </div>
+            <div class="col-md-9">
+                <h2>Control Panel</h2>
+                <div class="row">
+                    <div class="col-md-2" style="text-transform: uppercase">Status</div>
+                    <div class="col-md-10" id="status-info">N/A</div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-xs-6"><button class="btn btn-success" id="wake-btn">Wake</button></div>
+                    <div class="col-md-2 col-sm-4 col-xs-6"><button class="btn btn-info" id="sleep-btn">Sleep</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
