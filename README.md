@@ -3,8 +3,8 @@ Wake Up!
 
 Wake your target PC up with a single click!
 
-Concepts
---------
+Introduction
+------------
 
 I personally have two PC set here at home. A Windows
 All-In-One and a RaspberryPi running Raspbian.
@@ -36,6 +36,6 @@ variables as you desired.
 Finally, copy and run the code seperately on `target` and
 `server`.
 
-Navigate to your `server`'s HTTP server and login use the
+Navigate to your `server`'s HTTP server and login using the
 token specified in `./wakeup/config.py`. Done!
 
