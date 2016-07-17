@@ -1,10 +1,10 @@
 Wake Up!
---------
+========
 
 Wake your target PC up with a single click!
 
 Concepts
-========
+--------
 
 I personally have two PC set here at home. A Windows
 All-In-One and a RaspberryPi running Raspbian.
@@ -22,7 +22,7 @@ computer, while my RaspberryPi as a `server`. Simply run
 `server`, I can achieve the goal.
 
 Usage
-=====
+-----
 
 Firstly, as always, you should have Python 3 installed.
 Then
