@@ -8,7 +8,7 @@ from .config import config
 WOL_COMMAND = config.WOL_COMMAND
 
 TARGET_MAC = config.TARGET_MAC
-TARGET_SERVER = config.TARGET_IP + '' + config.TARGET_PORT
+TARGET_SERVER = config.TARGET_IP + ':' + config.TARGET_PORT
 
 LOGIN_TOKEN = config.TOKEN
 
@@ -58,7 +58,7 @@ def wake():
         except Exception:
             return '0'
         else:
-            if returncode == 0:
+            if run_result == 0:
                 return '1'
             else:
                 return '0'
