@@ -16,12 +16,13 @@ app = Flask(__name__)
 
 app.secret_key = config.SECRET
 
+
 @app.route('/login', methods=['POST', 'GET'])
 def login():
     if request.method=='POST':
         if request.form['token'] == LOGIN_TOKEN:
-            print(request.form['token'])
             session['login'] = True
+            session.permanent = True
             return redirect(url_for('home'))
         else:
             return redirect(url_for('login'))
